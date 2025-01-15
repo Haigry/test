@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonar 17 Tahun CUY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #d1fbff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #697dff;
+        }
+        h4 {
+            color: #ffcb69;
+        }
+        .collage-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .collage-item {
+            width: calc(33.33% - 10px);
+            margin: 5px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .collage-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .collage-item:hover img {
+            transform: scale(1.1);
+        }
+        .collage-item:nth-child(1) {
+            transform: rotate(-5deg);
+        }
+        .collage-item:nth-child(2) {
+            transform: rotate(5deg);
+        }
+        .collage-item:nth-child(3) {
+            transform: rotate(-3deg);
+        }
+
+
+
+        .collage-container2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .collage-item2 {
+            width: calc(33.33% - 10px);
+            margin: 5px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .collage-item2 img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .collage-item2:hover img {
+            transform: scale(1.1);
+        }
+        .collage-item2:nth-child(1) {
+            transform: rotate(7deg);
+        }
+        .collage-item2:nth-child(2) {
+            transform: rotate(-2deg);
+        }
+        .collage-item2:nth-child(3) {
+            transform: rotate(3deg);
+        }
+        button {
+            background-color: #697dff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #1447ff;
+        }
+        #message {
+            margin-top: 20px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 2px solid #697dff;
+            border-radius: 10px;
+            font-size: 16px;
+            resize: vertical;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        textarea:focus {
+            outline: none;
+            border-color: #1447ff;
+            box-shadow: 0 0 10px rgba(125, 105, 255, 0.5);
+        }
+        textarea::placeholder {
+            color: #697dff;
+            opacity: 0.7;
+        }
+        #popupContainer {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            display: none;
+            z-index: 1000;
+        }
+        #mainContent {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="popupContainer"></div>
+    <div id="mainContent">
+        <h1>Selamat Ulang Tahun Ke-17, BONARRRRRRR!!!</h1>
+        <h4>Dari Iyok</h4>
+        <div class="collage-container">
+            <div class="collage-item">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczMF20yVuKSF2rhgTTLyRiY7_DEB7ayQ38YL4iZfbjSpv66lgl9eeoa3BW7voZFn8wWA-i_TbnIGMvAdKMHXvNVIZq6QeghLlzwZfEQCl6gXD82FVQELS2YGENitfOb1DHxifQOXhS0FKsm-TBOi3h3d2g=w679-h905-s-no-gm?authuser=0" alt="  1">
+            </div>
+            <div class="collage-item">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczO48eo9ioQ62fZmwV3Zrlx_0w2RyJOQAtarfAbwqC48O-WkIv7_NOAPIngBwM32Jb8QPMk-ejReSfjtX_VCbbe2oo5R5JXMD9ZPxwRvIvymqRMxT4YZ6uSKEunXGniVnsFo47Y7TBu0hOJvwOUomioB-A=w679-h905-s-no-gm?authuser=0" alt="  2">
+            </div>
+            <div class="collage-item">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczOi2iMcBqlot2ITf3ueSmJZ1EA1h1KarQNP5zFIiX31ciBv1ddiR0HZUrT98gPqcHzU0cg0V24W_PVrpYIStDUSoutb064cYPNUNEE9ivGKRrPCWqr6yeliinmOBNnsxdd45-qPBiACIG3Hx05e2vCaNw=w679-h905-s-no-gm?authuser=0" alt="  3">
+            </div>
+        </div>
+        <div class="collage-container2">
+            <div class="collage-item2">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczPDUtuSrERn9ZUkjsTPy97wOsLnD8J_7z5Nq3YVU7qvI-dYJHzR0GAXeYTxJnYIJ5NIGR2s5b-vN1R2ViZJWlgbxVkgs8-SKy3ddCw_mJBgioKm7-rKRshgiRQXLdNiz5WgVmdi2mHFIduoy_jqysFWkQ=w679-h905-s-no-gm?authuser=0" alt="  1">
+            </div>
+            <div class="collage-item2">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczNwFHDoXnyxx0vXTJFET9k6k96tgON6QalOZf6oNiethca6ogVmhVH_mQ7ni8IHZn31EWYSSWI4VCc0SIfMqBVRYS-SlMcd3FL1QAg6UbdvJiaKER9NSNrzlyU6R8U4NclrJhdwF4LAKPdLEVz8UpI1aQ=w679-h905-s-no-gm?authuser=0" alt="  2">
+            </div>
+            <div class="collage-item2">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczMavf96VFkcPrxcTQA3gfYIDaLKoWjbcwFdIJmog6zpinWLg-QTlXK_dAZHzQ6yra0GNXxdRUJGTtNLkK2aIBuIDRJOwQMCErfKJBrz0AAB6ZnL3edKcVNHQtZboev0Cya0lcFOeIQwtcRwr9OJ9W-VBw=w679-h905-s-no-gm?authuser=0" alt="  3">
+            </div>
+        </div>
+        <div id="message">
+            <h3>Tulis Pesanmu</h3>
+            <textarea id="messageText" placeholder="Tuliskan balasan di sini... hehehe"></textarea>
+            <button onclick="kirimPesan()">Kirim Untuk Iyok</button>
+        </div>
+    </div>
+
+    <script>
+        const pesan = [
+            "ANJAI 17 TAHUNN!!!",
+            "Selamat ulangtahun ya bonnnn, semoga makin dewasa, makin pinter, makin cantik, makin baik, makin lama makin makin wkwkw",
+            "Semoga apa yang menjadi harapanmu dapat kamu capai, dan apa yang menjadi impianmu dapat kamu raih, Aamiin",
+            "Itu aja sih yang bisa aku ucapin, soalnya aku ga bisa ngomong panjang lebar, hehe",
+            "Semoga hari ini jadi hari yang paling berkesan buatmu, dan semoga ga cinge pas mbaca ini",
+            "Maaf bila kurang menarik karena yang menarik aku simpen buat besok kapan kapann, Uwu 😏",
+            "Sekali lagi Selamat Ulang Tahun BONARRRR!!!. TYSM for being my bestie",
+            "ANJAY DADI GA NYANGKA 1 JAM DADI.... :)",
+            "Maap Telat sedino"
+        ];
+        let indeksPesanSekarang = 0;
+
+        function mulaiPerayaan() {
+            tampilkanPesanBerikutnya();
+        }
+
+        function tampilkanPesanBerikutnya() {
+            const containerPesan = document.getElementById('popupContainer');
+            if (indeksPesanSekarang < pesan.length) {
+                containerPesan.innerHTML = pesan[indeksPesanSekarang];
+                containerPesan.innerHTML += '<br><button onclick="tampilkanPesanBerikutnya()">Lanjut</button>';
+                containerPesan.style.display = 'block';
+                indeksPesanSekarang++;
+            } else {
+                containerPesan.style.display = 'none';
+                document.getElementById('mainContent').style.display = 'block';
+            }
+        }
+
+
+        function kirimPesan() {
+            const pesan = document.getElementById('messageText').value;
+            const nomorTelepon = "+6289515583710";
+            const pesanTerenkode = encodeURIComponent(pesan);
+            const urlWhatsApp = `https://api.whatsapp.com/send?phone=${nomorTelepon}&text=${pesanTerenkode}`;
+            window.open(urlWhatsApp, '_blank');
+            alert("Pesanmu telah dikirim ke Iyok. Klik kirim di aplikasi untuk mengirimnya yaaa...");
+        }
+
+        // Start the celebration when the page loads
+        window.onload = mulaiPerayaan;
+    </script>
+</body>
+</html>
